@@ -1,0 +1,964 @@
+Act like an award-winning elite designer and expert web developer. Your objective is to build a premium, highly responsive, visually stunning, and interactive dark-themed personal portfolio website for Tirthapada Panda from scratch using React, Tailwind CSS, and Framer Motion.
+
+IMPORTANT:
+DO NOT change the overall layout, section structure, visual hierarchy, navigation structure, or interaction concepts specified below.
+
+The original design structure should remain intact. Adapt ONLY the content, identity, skills, projects, achievements, and professional positioning to Tirthapada Panda.
+
+The resulting website should feel highly polished, expensive, futuristic, technical, and dynamic, with a strong AI/ML + Cybersecurity + Software Development identity.
+
+Employ smooth scroll transitions, micro-interactions, 3D stacking effects, subtle futuristic elements, and premium motion design.
+
+---
+
+## 1. Technical Stack & Architecture
+
+- Framework: React.js via Vite
+- Styling: Tailwind CSS
+- Animation Library: Framer Motion
+- Icons: lucide-react
+- 3D effects where appropriate: Three.js / React Three Fiber
+- Keep the architecture component-based.
+
+File Structure:
+- src/App.jsx
+- src/index.css
+- src/components/
+  - Navbar.jsx
+  - Hero.jsx
+  - About.jsx
+  - RecentWorks.jsx
+  - Services.jsx
+  - Footer.jsx
+
+Do NOT unnecessarily change the requested architecture.
+
+---
+
+## 2. Design System
+
+### Color Palette
+
+Keep the original palette:
+
+- Primary Background: #0d1116
+- Secondary Background/Surface: #14181f
+- Primary Accent: #00df8f
+- Gradient Accent: from-[#00df8f] to-[#00b373]
+- Primary Text: #ffffff
+- Secondary Text: #9ca3af
+- Borders/Dividers: rgba(255,255,255,0.1)
+
+The green accent should represent technology, intelligence, cybersecurity and system activity.
+
+### Typography
+
+Use:
+- Inter
+- Outfit
+- or Space Grotesk
+
+Headings:
+- Bold
+- Tight letter spacing
+- tracking-tighter
+- leading-[0.9]
+
+Labels:
+- uppercase
+- tracking-widest
+- small sizes
+
+---
+
+# 3. SECTION SPECIFICATIONS
+
+## A. Navigation Bar — Navbar.jsx
+
+Keep the exact navigation layout and behavior.
+
+Logo:
+
+"TIRTHAPADA"
+
+with a neon green period:
+
+"TIRTHAPADA."
+
+Links:
+
+ABOUT
+WORK
+SKILLS
+ACHIEVEMENTS
+CONTACT
+
+The links should smoothly scroll to their respective sections.
+
+Right-side circular action button should contain a subtle neon green dot.
+
+When hovering over navigation links:
+- transition to neon green
+- subtle underline or glow
+- smooth Framer Motion transition
+
+---
+
+# B. HERO SECTION — Hero.jsx
+
+Keep the original split two-column hero layout.
+
+The hero should immediately communicate:
+
+AI/ML + Cybersecurity + Software Development
+
+### Background
+
+Keep:
+- #0d1116 background
+- subtle CSS grid
+- large barely-visible typography
+
+Instead of:
+
+"DESIGN"
+
+use:
+
+"CODE"
+
+or:
+
+"INTELLIGENCE"
+
+The giant background text should remain extremely subtle with approximately 2% opacity.
+
+---
+
+## LEFT COLUMN — PERSONAL INTRODUCTION
+
+Small label:
+
+"AI/ML • CYBERSECURITY • SOFTWARE"
+
+with a small neon green status dot.
+
+Main heading:
+
+"BUILDING"
+
+followed by:
+
+"INTELLIGENT SYSTEMS."
+
+Use the same outlined-text effect for:
+
+"INTELLIGENT SYSTEMS"
+
+with:
+
+text-transparent
+WebkitTextStroke: 2px #00df8f
+
+Keep the overall typography treatment exactly like the original specification.
+
+Hero description:
+
+"I’m Tirthapada Panda, a computer science student passionate about Artificial Intelligence, Machine Learning, Cybersecurity and software development. I enjoy turning ideas into practical, intelligent and impactful projects."
+
+CTA buttons:
+
+"VIEW MY WORK"
+
+and
+
+"CONTACT ME"
+
+View My Work:
+- neon green gradient
+- pill shape
+- arrow icon
+- hover scale effect
+
+Contact Me:
+- dark surface
+- thin white border
+- green dot
+
+---
+
+## RIGHT COLUMN — INTERACTIVE 3D ID CARD
+
+Keep the exact ID-card concept from the original prompt.
+
+Instead of a generic AI portrait, use my uploaded portrait/3D character image when I provide one.
+
+The card should represent:
+
+TIRTHAPADA PANDA
+
+"AI/ML & CYBERSECURITY DEVELOPER"
+
+The card should use:
+
+- dark gray rounded container
+- inner border
+- cinematic portrait
+- subtle green/blue lighting
+- realistic depth
+- premium 3D appearance
+
+Keep:
+
+drag
+dragElastic={0.2}
+dragConstraints
+dragTransition={{
+  bounceStiffness: 600,
+  bounceDamping: 20
+}}
+
+Keep the floating animation:
+
+animate={{
+  y: [0, -15, 0],
+  rotateZ: [-1, 1, -1]
+}}
+
+with infinite looping.
+
+The lanyard strip should extend upward out of the screen exactly as in the original layout.
+
+At the bottom of the card show:
+
+"TIRTHAPADA PANDA"
+
+"AI/ML • CYBERSECURITY • DEVELOPER"
+
+---
+
+# C. ABOUT SECTION — About.jsx
+
+KEEP THE ORIGINAL TWO-COLUMN LAYOUT.
+
+Section ID:
+
+#about
+
+Left heading:
+
+"BUILDING WITH PURPOSE."
+
+Instead of designer-focused text, write about my technical journey.
+
+Use:
+
+"I’m currently exploring the intersection of Artificial Intelligence, Machine Learning, Cybersecurity and Software Development."
+
+Second paragraph:
+
+"I enjoy learning by building — from intelligent systems and AI-powered applications to cybersecurity-focused projects and full-stack web experiences."
+
+Do not exaggerate my experience.
+
+---
+
+## STATS
+
+Keep the same two-column statistics design.
+
+Replace:
+
+20+ Awards
+100% Commitment
+
+with:
+
+9.02
+CURRENT CGPA
+
+3
+HACKATHONS
+
+Use a thin vertical divider between them.
+
+Below the statistics, optionally add a small third achievement indicator:
+
+1 HACKATHON WIN
+
+Keep the visual simplicity of the original design.
+
+---
+
+## RIGHT COLUMN — MY TOOLKIT
+
+Keep the original glassmorphism toolkit card.
+
+Title:
+
+"MY TOOLKIT"
+
+Skill chips:
+
+Python
+Java
+C
+C++
+JavaScript
+React.js
+HTML
+CSS
+Tailwind CSS
+Git
+GitHub
+AI/ML
+Machine Learning
+Cybersecurity
+Data Structures & Algorithms
+Computer Science
+Computer Vision
+NLP
+
+Do not overcrowd the card.
+
+Use staggered Framer Motion animations.
+
+Hover:
+
+hover:border-[#00df8f]
+hover:text-[#00df8f]
+hover:shadow-[0_0_15px_rgba(0,223,143,0.3)]
+
+---
+
+# D. RECENT WORKS — RecentWorks.jsx
+
+KEEP THE EXACT 3D STACKED CARD INTERACTION.
+
+Section ID:
+
+#work
+
+Heading:
+
+"SELECTED PROJECTS"
+
+Button:
+
+"VIEW ALL PROJECTS"
+
+---
+
+## PROJECT STACK
+
+Use the same 3D card stacking mechanic:
+
+activeIdx
+
+Cards behind:
+
+y: diff * 35
+scale: 1 - diff * 0.05
+rotateX: diff * 2
+
+Keep:
+
+ease: [0.32, 0.72, 0, 1]
+
+Clicking the front card sends it to the back.
+
+Clicking a background card brings it to the front.
+
+---
+
+## PROJECTS
+
+Use my actual projects where available.
+
+PROJECT 01:
+
+AI-POWERED VOICE CLONING DETECTION
+
+Description:
+
+"An AI-powered system focused on detecting and preventing voice-cloning impersonation attacks."
+
+Tags:
+
+AI
+Machine Learning
+Cybersecurity
+Deep Learning
+Audio Analysis
+
+PROJECT 02:
+
+D-FUSE
+
+Use D-FUSE as one of my featured technical projects.
+
+Do not invent technical details that are not provided.
+
+PROJECT 03:
+
+QUICKBITE
+
+A smart food ordering platform focused on a modern digital ordering experience.
+
+Tags:
+
+React
+JavaScript
+Web Development
+UI/UX
+
+PROJECT 04:
+
+Add another project placeholder:
+
+"NEW PROJECT"
+
+Clearly mark it as editable placeholder content until I provide the details.
+
+---
+
+## RIGHT SIDE PROJECT INFORMATION
+
+Keep the original raw-text description panel.
+
+Display:
+
+Category
+Project Title
+Description
+Technology Tags
+"EXPLORE PROJECT"
+
+Use AnimatePresence mode="wait".
+
+Do NOT invent GitHub URLs or live-demo URLs.
+
+Use placeholders until I provide them.
+
+---
+
+# E. SERVICES SECTION — Services.jsx
+
+KEEP THE ORIGINAL ACCORDION STRUCTURE AND LAYOUT.
+
+However, rename the section:
+
+"WHAT I WORK WITH"
+
+or:
+
+"AREAS OF EXPERTISE"
+
+Keep the same centered heading treatment with outlined text.
+
+Accordion items:
+
+01 — ARTIFICIAL INTELLIGENCE
+
+02 — MACHINE LEARNING
+
+03 — CYBERSECURITY
+
+04 — SOFTWARE DEVELOPMENT
+
+05 — DATA STRUCTURES & ALGORITHMS
+
+06 — WEB DEVELOPMENT
+
+When opened, reveal a concise description of each area.
+
+Use the same:
+
+AnimatePresence
+motion.div
+height: auto
+
+animation.
+
+Do not claim professional expertise beyond my actual level.
+
+Phrase descriptions as:
+
+"Currently learning and building with..."
+
+where appropriate.
+
+---
+
+# F. FOOTER — Footer.jsx
+
+KEEP THE ORIGINAL FOOTER LAYOUT.
+
+Section ID:
+
+#contact
+
+Massive background text:
+
+"CONNECT"
+
+instead of "CONTACT".
+
+Top-left heading:
+
+"LET'S BUILD SOMETHING."
+
+Bio:
+
+"I’m always interested in learning, building meaningful projects, exploring new technologies and connecting with people who enjoy creating things."
+
+Email CTA:
+
+"GET IN TOUCH"
+
+Right side:
+
+MENU
+
+ABOUT
+WORK
+SKILLS
+ACHIEVEMENTS
+CONTACT
+
+SOCIALS
+
+GitHub
+LinkedIn
+
+Do not invent social media URLs.
+
+Use placeholders until I provide my actual links.
+
+Bottom:
+
+"© 2026 Tirthapada Panda. All rights reserved."
+
+---
+
+# 4. ACHIEVEMENTS SECTION
+
+IMPORTANT:
+
+Add an achievements section while preserving the overall design language and visual hierarchy.
+
+Section title:
+
+"ACHIEVEMENTS"
+
+Subtitle:
+
+"PROOF OF WORK"
+
+Create premium achievement cards.
+
+Highlight:
+
+9.02
+CURRENT CGPA
+
+3
+HACKATHONS PARTICIPATED
+
+1
+HACKATHON WIN
+
+IIT GUWAHATI
+HACKATHON PARTICIPATION
+
+The IIT Guwahati hackathon should receive special visual emphasis because it is a notable achievement.
+
+Do not invent:
+- hackathon names
+- dates
+- ranks
+- prizes
+- team names
+
+unless I provide them.
+
+---
+
+# 5. CERTIFICATIONS
+
+Add a premium certification subsection.
+
+Title:
+
+"KNOWLEDGE ARCHIVE"
+
+Show my strongest technical certifications.
+
+Prioritize:
+
+AI
+Machine Learning
+Cybersecurity
+Programming
+Computer Science
+Data Structures & Algorithms
+
+Use interactive certificate cards.
+
+When clicked:
+- card moves forward in 3D
+- expands
+- displays certification details
+- provides verification link if available
+
+Do not invent certificate names or organizations.
+
+Use uploaded certificate information when available.
+
+---
+
+# 6. INTERACTIVE 3D COMPUTER
+
+Add a premium futuristic computer/workstation experience without changing the overall portfolio structure.
+
+The workstation should contain floating technology icons:
+
+AI
+ML
+CYBERSECURITY
+PYTHON
+JAVA
+C++
+DSA
+REACT
+GITHUB
+
+The monitor should have:
+
+- realistic depth
+- glass screen
+- subtle reflections
+- green/blue glow
+- futuristic UI
+- floating particles
+
+---
+
+## CLICK INTERACTION
+
+When the visitor clicks an icon inside the computer:
+
+The icon should physically jump OUT of the screen.
+
+Animation:
+
+inside screen
+→ moves toward viewer
+→ scales up
+→ rotates slightly
+→ becomes a floating skill card
+
+Example:
+
+PYTHON
+
+"Programming, automation and AI/ML development."
+
+The card should show:
+- skill
+- related technologies
+- related projects
+- short description
+
+When closed:
+
+The icon smoothly returns INTO the computer.
+
+This should feel like a physical 3D interaction rather than a normal popup.
+
+---
+
+# 7. AI CORE
+
+Create a futuristic visualization titled:
+
+"AI CORE"
+
+Represent:
+
+Artificial Intelligence
+Machine Learning
+Deep Learning
+Computer Vision
+NLP
+Data
+Algorithms
+Cybersecurity
+
+Use interconnected nodes.
+
+Mouse movement should subtly influence the network.
+
+Hovering over a node highlights connected nodes.
+
+Clicking a node opens a small information panel.
+
+---
+
+# 8. CYBERSECURITY TERMINAL
+
+Add a futuristic terminal section.
+
+Title:
+
+"SECURITY TERMINAL"
+
+Use simulated commands such as:
+
+$ python analyze.py
+$ nmap -sV target
+$ git status
+$ python train.py
+
+IMPORTANT:
+
+These are visual simulations only.
+
+Do not execute real commands.
+
+Add a typing animation and subtle terminal activity.
+
+End with:
+
+"BUILD • LEARN • SECURE • CREATE"
+
+---
+
+# 9. SCROLL-BASED 3D EXPERIENCE
+
+Make the entire portfolio feel connected.
+
+As the visitor scrolls:
+
+HERO
+↓
+ABOUT
+↓
+SKILLS
+↓
+PROJECTS
+↓
+AI CORE
+↓
+ACHIEVEMENTS
+↓
+CERTIFICATIONS
+↓
+SECURITY TERMINAL
+↓
+CONTACT
+
+Use:
+
+- parallax
+- scale
+- opacity
+- rotation
+- depth
+- translateZ-style effects
+
+Keep animations smooth and premium.
+
+Do not over-animate.
+
+---
+
+# 10. MOUSE INTERACTIONS
+
+Add subtle cursor interaction:
+
+- 3D cards tilt toward cursor
+- skill icons respond to cursor
+- particles subtly move
+- holographic UI has parallax
+- workstation reacts to cursor
+- project cards have depth
+
+Never make the entire page shake or aggressively follow the cursor.
+
+---
+
+# 11. HIDDEN EASTER EGG
+
+Add a subtle hidden developer easter egg.
+
+After a specific interaction, display:
+
+"ACCESS LEVEL: DEVELOPER"
+
+Then briefly activate a futuristic system animation.
+
+Keep it tasteful.
+
+---
+
+# 12. LOADING EXPERIENCE
+
+Create a short futuristic loading sequence:
+
+INITIALIZING...
+LOADING PORTFOLIO...
+LOADING AI CORE...
+LOADING PROJECTS...
+SYSTEM READY.
+
+Keep it approximately 1–2 seconds.
+
+Then smoothly reveal the hero.
+
+---
+
+# 13. RESUME
+
+Create:
+
+"ACCESS RESUME"
+
+button.
+
+When clicked:
+
+CLICK
+→ scanning animation
+→ ACCESS GRANTED
+→ resume opens/downloads
+
+Use a real PDF when I provide my resume.
+
+Do not create fake resume content.
+
+---
+
+# 14. RESPONSIVE DESIGN
+
+The website must work perfectly on:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+On mobile:
+
+- collapse grids
+- reduce 3D complexity
+- preserve animations where possible
+- maintain readable typography
+- ensure buttons are touch-friendly
+
+The experience should still feel premium on mobile.
+
+---
+
+# 15. PERFORMANCE
+
+Optimize aggressively.
+
+- Lazy-load 3D scenes
+- Lazy-load videos
+- Compress assets
+- Use poster images
+- Pause off-screen animations
+- Avoid unnecessary WebGL rendering
+- Use requestAnimationFrame responsibly
+- Respect prefers-reduced-motion
+
+---
+
+# 16. MY PERSONAL BRAND
+
+The portfolio should communicate this identity:
+
+TIRTHAPADA PANDA
+
+AI/ML
+CYBERSECURITY
+SOFTWARE DEVELOPMENT
+
+Core interests:
+
+Artificial Intelligence
+Machine Learning
+Cybersecurity
+Programming
+Data Structures & Algorithms
+Web Development
+Computer Science
+
+The personality should feel:
+
+CURIOUS
+TECHNICAL
+BUILDING-FOCUSED
+INNOVATIVE
+PROBLEM-SOLVING
+
+Avoid describing me as an "expert" or "professional" unless I explicitly provide that information.
+
+Use language appropriate for a computer science student who is actively learning, building projects and participating in hackathons.
+
+---
+
+# 17. FINAL DESIGN PRINCIPLE
+
+The website should feel like:
+
+"A futuristic personal operating system for Tirthapada Panda."
+
+Not:
+
+- a generic student portfolio
+- a generic cybersecurity website
+- a gaming website
+- an ordinary resume website
+
+It should combine:
+
+Premium product-design aesthetics
++
+AI laboratory
++
+Cybersecurity workstation
++
+Interactive 3D portfolio
++
+Personal developer identity
+
+The design must remain professional enough for:
+
+- internships
+- placements
+- hackathons
+- recruiters
+- professors
+- technical communities
+
+The website should tell a story:
+
+"THIS IS WHO I AM"
+→
+"THIS IS WHAT I LEARN"
+→
+"THIS IS WHAT I BUILD"
+→
+"THIS IS WHAT I HAVE ACHIEVED"
+→
+"THIS IS WHAT I CAN CREATE NEXT"
+
+Build the complete working portfolio.
+
+Do not change the fundamental layout or structure provided in this specification.
+
+Do not invent personal achievements, certificates, project details, social links, dates, ranks or credentials.
+
+Use clearly marked editable placeholders whenever information is missing.

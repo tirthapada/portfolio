@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm --filter @workspace/tirthapada-portfolio run build",
-  "outputDirectory": "artifacts/tirthapada-portfolio/dist/public",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
     {

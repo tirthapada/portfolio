@@ -118,6 +118,13 @@ globalThis.__dirname = __bannerPath.dirname(globalThis.__filename);
     `,
     },
   });
+
+  // Create a fallback index.html and public directory for Vercel deployment detection
+  const { writeFile, mkdir } = await import("node:fs/promises");
+  await mkdir(path.resolve(distDir, "public"), { recursive: true });
+  const htmlContent = "<!DOCTYPE html><html><head><title>Portfolio API Server</title></head><body><h1>Portfolio API Server is running</h1><p>Endpoints available under <code>/api/healthz</code></p></body></html>";
+  await writeFile(path.resolve(distDir, "index.html"), htmlContent);
+  await writeFile(path.resolve(distDir, "public/index.html"), htmlContent);
 }
 
 buildAll().catch((err) => {

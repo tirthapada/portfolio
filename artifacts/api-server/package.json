@@ -5,10 +5,10 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "dev": "pnpm run build && pnpm run start",
+    "dev": "node ./build.mjs && node --enable-source-maps ./dist/index.mjs",
     "build": "node ./build.mjs",
     "prestart": "node ./build.mjs",
-    "start": "node --enable-source-maps ./dist/index.mjs",
+    "start": "node ./build.mjs && node --enable-source-maps ./dist/index.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

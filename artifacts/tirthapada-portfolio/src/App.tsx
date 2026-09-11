@@ -505,13 +505,56 @@ function Loader({ done }: { done: boolean }) {
 
 function Navigation({ open, setOpen, onBrand, onResume, theme, toggleTheme }: { open: boolean; setOpen: (open: boolean) => void; onBrand: () => void; onResume: () => void; theme: 'dark' | 'light'; toggleTheme: () => void }) {
   const links = [['ABOUT', 'about'], ['WORK', 'work'], ['SKILLS', 'skills'], ['ACHIEVEMENTS', 'achievements'], ['TERMINAL', 'terminal'], ['CONTACT', 'contact']];
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 900 && open) setOpen(false);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [open, setOpen]);
+
   return <nav className="nav">
     <div className="container-wide nav-inner">
       <button className="brand" data-testid="button-brand" onClick={() => { onBrand(); scrollToId('top'); }}>TIRTHAPADA<span>.</span></button>
+      
+      {open && <div className="nav-drawer-backdrop" onClick={() => setOpen(false)} aria-label="Close navigation" />}
+
       <div className={`nav-links ${open ? 'open' : ''}`}>
-        {links.map(([label, id]) => <a data-testid={`link-${id}`} key={id} href={`#${id}`} onClick={() => setOpen(false)}>{label}</a>)}
+        <div className="nav-drawer-header">
+          <span className="eyebrow">MENU // 2026</span>
+          <button className="nav-drawer-close" onClick={() => setOpen(false)} aria-label="Close menu"><X size={18} /></button>
+        </div>
+        <div className="nav-links-list">
+          {links.map(([label, id]) => (
+            <a data-testid={`link-${id}`} key={id} href={`#${id}`} onClick={() => setOpen(false)} className="nav-link-item">
+              <span>{label}</span>
+              <ArrowUpRight size={13} className="nav-link-arrow" />
+            </a>
+          ))}
+        </div>
+        <div className="nav-drawer-footer">
+          <button
+            className="button button-primary nav-drawer-resume-btn"
+            onClick={() => { setOpen(false); onResume(); }}
+          >
+            <ScanLine size={14} /> ACCESS RESUME (PDF)
+          </button>
+          <div className="nav-drawer-socials">
+            <a href="https://github.com/tirthapada" target="_blank" rel="noreferrer" className="nav-drawer-social-link">
+              <Github size={15} /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/tirthapada-panda" target="_blank" rel="noreferrer" className="nav-drawer-social-link">
+              <Linkedin size={15} /> LinkedIn
+            </a>
+            <a href="mailto:tirthapadapanda@gmail.com" className="nav-drawer-social-link">
+              <Mail size={15} /> Email
+            </a>
+          </div>
+        </div>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+      
+      <div className="nav-actions">
         <button
           className="nav-resume-btn"
           data-testid="button-nav-resume"
@@ -525,7 +568,7 @@ function Navigation({ open, setOpen, onBrand, onResume, theme, toggleTheme }: { 
           href="https://github.com/tirthapada"
           target="_blank"
           rel="noreferrer"
-          className="nav-social-btn"
+          className="nav-social-btn nav-social-desktop"
           aria-label="GitHub Profile"
           title="GitHub: https://github.com/tirthapada"
         >
@@ -535,7 +578,7 @@ function Navigation({ open, setOpen, onBrand, onResume, theme, toggleTheme }: { 
           href="https://www.linkedin.com/in/tirthapada-panda"
           target="_blank"
           rel="noreferrer"
-          className="nav-social-btn"
+          className="nav-social-btn nav-social-desktop"
           aria-label="LinkedIn Profile"
           title="LinkedIn: https://www.linkedin.com/in/tirthapada-panda"
         >

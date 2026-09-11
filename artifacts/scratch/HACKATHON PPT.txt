@@ -1,0 +1,261 @@
+=== HACKATHON PPT ===
+
+--- ppt/slides/slide1.xml ---
+AI -ASSISTED LUNAR TERRAIN ANALYSIS &
+SAFE ROVER NAVIGATION
+Team Chandra
+Presented By -
+TIRTHAPADA PANDA
+ASHRITA BEHERA
+SWAGATAM PRADHAN
+RR HIMANSHU SEKHAR DAS
+Next
+
+--- ppt/slides/slide2.xml ---
+Content :
+Lunar AI: Intelligent Landing Site Selection & Rover Navigation
+End-to-End AI Pipeline: From Image to Decision
+Five Core Modules
+System Architecture
+Feature Set & Development Roadmap
+Working Methodology
+Dashboard UI — Mission Intelligence at a Glance
+Expected Impact
+Future Scope
+Technical Feasibility
+Implementation Timeline
+Conclusion
+
+--- ppt/slides/slide3.xml ---
+Lunar AI: Intelligent Landing Site Selection & Rover Navigation
+An AI-powered system that analyzes lunar satellite imagery, detects terrain hazards, recommends the safest landing zones, and plans optimal rover paths — built for the next era of Moon and Mars exploration.
+
+--- ppt/slides/slide4.xml ---
+Why Landing on the Moon Is Harder Than It Looks
+Terrain Hazards
+Craters, boulders, steep slopes, and regolith make manual landing site selection extremely risky. A single misjudgment can destroy a mission.
+Manual Analysis Is Too Slow
+Human experts analyzing satellite imagery take hours or days — far too slow for autonomous or time-critical missions.
+An AI-assisted, real-time system is essential for safe, scalable lunar exploration.
+
+--- ppt/slides/slide5.xml ---
+The Moon Is Back — And the World Is Racing
+Why This Matters Now
+NASA's Artemis Program and ISRO's Chandrayaan missions have reignited global lunar exploration. Safe, autonomous landing and navigation are no longer optional — they are mission-critical requirements.
+Artemis III targets crewed south pole landing by 2026
+ISRO planning Chandrayaan-4 sample return mission
+Autonomous navigation reduces communication delay risks
+
+--- ppt/slides/slide6.xml ---
+What the System Must Do
+Analyze Lunar Images
+Process high-resolution satellite imagery of the lunar surface
+Detect Craters & Rocks
+Identify surface hazards including craters, boulders, and debris
+Terrain Classification
+Classify slopes, flat zones, and dangerous terrain types
+Recommend Landing Zone
+Generate hazard maps and recommend the safest landing area
+Rover Path Planning
+Compute the safest, most efficient traversal route for rovers
+
+--- ppt/slides/slide7.xml ---
+End-to-End AI Pipeline: From Image to Decision
+Every stage feeds the next — raw satellite imagery is transformed through AI processing, terrain analysis, and hazard detection into a ranked landing recommendation with a quantified safety score and an optimal rover path, all visualized on an interactive mission dashboard.
+
+--- ppt/slides/slide8.xml ---
+Five Core Modules
+Terrain
+Analysis
+Classifies surface types — flat, sloped, rough — using elevation and texture data
+Hazard Detection
+YOLO-based detection of craters, boulders, and dangerous terrain features
+Landing Recommendation
+Scores and ranks candidate zones, recommending the safest with explainability
+Rover Navigation
+A* algorithm computes obstacle-free, energy-efficient traversal paths
+Dashboard Visualization
+Real-time interactive mission dashboard with hazard maps, scores, and reports
+
+--- ppt/slides/slide9.xml ---
+System Architecture
+Architecture Overview
+The system follows a clean four-layer architecture — from raw data ingestion through AI processing and decision-making to an interactive output layer — ensuring modularity, scalability, and real-time performance.
+Input Layer:
+NASA lunar datasets + user-uploaded imagery
+Processing Layer:
+OpenCV preprocessing, YOLO detection, TensorFlow classification
+Decision Layer:
+Terrain scoring, hazard mapping, A* path planning
+Output Layer:
+Dashboard, safety reports, heat maps, mission summaries
+
+--- ppt/slides/slide10.xml ---
+Technologies Powering Lunar AI
+Frontend
+HTML · CSS · JavaScript — responsive mission dashboard UI
+Backend
+Python · Flask — lightweight REST API for model serving
+AI / ML
+OpenCV · YOLO · Computer vision ,
+Algorithm
+A* Path Planning — optimal, obstacle-aware
+rover routing
+Dataset
+NASA Lunar Reconnaissance Orbiter  Camera
+(LROC) imagery database
+
+--- ppt/slides/slide11.xml ---
+Feature Set & Development Roadmap
+Safe Landing Detection
+Hazard & Crater Detection
+Rock & Terrain Analysis
+Safety Score & Heat Map
+Rover Route Planning
+Interactive Dashboard
+Mission Report Generation
+From lunar dataset to full mission dashboard — Lunar AI delivers a complete,
+production-ready pipeline for autonomous space exploration.
+
+--- ppt/slides/slide12.xml ---
+Development Roadmap
+1
+Phase 1
+Dataset collection, preprocessing,
+and crater detection model
+2
+Phase 2
+Hazard map generation, safety scoring,
+and landing recommendation
+3
+Phase 3
+Rover path planning,
+dashboard integration, and testing
+4
+Phase 4
+Moons compatibility, explainability panel,
+and final demo
+
+--- ppt/slides/slide13.xml ---
+Working Methodology
+Our AI pipeline transforms raw lunar imagery into actionable mission intelligence — in nine precise steps.
+
+--- ppt/slides/slide14.xml ---
+From Image to Intelligence
+Safe Areas ID'd
+Hazards Detected
+Terrain Analyzed
+AI Preprocesses
+User Uploads
+Each stage is powered by specialized deep learning models — from convolutional neural networks for terrain segmentation to reinforcement learning for optimal path planning. The entire pipeline executes in seconds, delivering mission-ready outputs to operators in real time.
+
+--- ppt/slides/slide15.xml ---
+Dashboard UI — Mission Intelligence at a Glance
+A unified command interface presenting all critical outputs for rapid mission decisions.
+Crater Detection
+AI-mapped craters with size and depth classification
+Rock Hazard Map
+Rock clusters flagged with risk severity scores
+Safe Landing Zones
+Ranked zones with safety scores and coordinates
+Rover Path
+Optimized safe route from landing to target
+Mission Statistics
+Area coverage, hazard density, and terrain
+maetrics
+
+--- ppt/slides/slide16.xml ---
+Expected Impact
+This system directly addresses the most critical challenges in lunar exploration — from reducing mission failure rates to enabling fully autonomous operations. By automating hazard detection and landing site selection, it dramatically shortens mission planning cycles and lowers operational costs for agencies like ISRO and NASA.
+A single successful autonomous landing can save
+hundreds of millions of dollars
+in mission costs and years of scientific opportunity.
+
+--- ppt/slides/slide17.xml ---
+Future Scope
+Built to evolve — from lunar landing assistance to a full interplanetary exploration platform.
+Real-Time Satellite Link
+Live terrain feeds from orbiters for dynamic mission updates
+3D Terrain Mapping
+Full volumetric reconstruction for precision landing analysis
+Moon Digital Twin
+Simulate missions in a virtual lunar replica before launch
+Mars & Multi-Rover
+Extend to Mars terrain with coordinated multi-rover AI missions
+
+--- ppt/slides/slide18.xml ---
+Technical Feasibility
+This project is grounded in proven, accessible technology — no speculative components. Every layer of the stack relies on publicly available resources, open-source frameworks, and cloud-native architecture that can be deployed within days.
+📦
+Public Datasets
+NASA , ISRO Chandrayaan imagery freely available
+🤖
+Pre-Trained Models
+YOLO, OpenCV, FLASK, PIL and
+segmentation models ready to fine-tune
+
+--- ppt/slides/slide19.xml ---
+Implementation Timeline
+A focused 6-week sprint from data to deployed dashboard.
+1
+Week 1
+Dataset Collection
+LROC & Chandrayaan imagery ingestion and labeling
+2
+Week 2
+Image Processing
+Preprocessing pipeline, normalization, augmentation
+3
+Week 3
+AI Detection
+Train crater, rock, and hazard detection models
+4
+Week 4
+Landing Recommendation
+Safety scoring algorithm and zone ranking
+5
+Week 5
+Path Planning
+A* & path finding rover navigation with obstacle avoidance
+6
+Week 6
+Dashboard
+Full UI integration, testing, and deployment
+
+--- ppt/slides/slide20.xml ---
+Transforming Lunar Exploration with AI
+Our solution combines
+Artificial Intelligence, Computer Vision, and Smart Path Planning
+to make lunar landing and rover navigation safer, faster, and more reliable.
+By automating hazard detection and landing site selection, we can
+reduce mission risks, save valuable time, and improve exploration efficiency.
+Designed using
+open-source technologies and real NASA/ISRO datasets
+, the project is practical, scalable, and ready for future enhancements.
+Beyond the Moon, the same architecture can support
+Mars missions and other planetary exploration
+, making it a future-ready solution.
+Final Thought
+"The future of space exploration belongs to intelligent systems. With Lunar AI, we're not just helping machines land safely—we're enabling humanity to explore farther, smarter, and with greater confidence."
+Conclusion
+
+--- ppt/slides/slide21.xml ---
+Why Our Solution Will Win
+Truly Innovative
+End-to-end AI for lunar missions — not just detection, but decision-making
+Real-World Ready
+Built on proven tech with direct application to ISRO & NASA programs
+Infinitely Scalable
+From Moon to Mars — the architecture extends to any planetary body
+Complete Package
+Modern UI, professional architecture, high feasibility, & strong visual impact
+This system doesn't just analyze the Moon —
+it
+protects the missions
+that will one day walk on it.
+
+--- ppt/slides/slide22.xml ---
+PREV
+"Together, let's make the next giant leap in space exploration safer with AI."
+Thank You!
+Any Questions?

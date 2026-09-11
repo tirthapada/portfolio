@@ -1,0 +1,216 @@
+=== QuickBite_Review1 ===
+
+--- ppt/slides/slide1.xml ---
+GIET UNIVERSITY, GUNUPUR, ODISHA
+Department of Computer Science and Engineering
+GIET
+QuickBite
+Smart Food Ordering Platform
+Learning Project Presentation – Review 1
+PRESENTED
+BY
+Tirthapada Panda
+25UG010106
+Swagatam Pradhan
+25UG010111
+Bibek Dash
+25UG010114
+UNDER THE GUIDANCE OF
+Ms. Sandhyarani Biswal
+Assistant Professor, CSE
+
+--- ppt/slides/slide2.xml ---
+Outlines
+1
+Introduction
+Overview of the
+QuickBite
+platform and its purpose
+2
+Problem Definition & Objectives
+The gap identified and goals set for the project
+3
+Requirement Analysis & Scope
+Functional & non-functional requirements, and scope
+4
+Existing System Study
+Features seen in existing food ordering platforms
+5
+Proposed Solution & System Design
+Our approach, architecture and technology choices
+6
+Development Progress
+What has been built so far towards the ~40% mark
+7
+Conclusion & Future Work
+Summary of work done and what comes next
+8
+Q&A
+Open floor for questions and suggestions
+QuickBite – Smart Food Ordering Platform  |  Review 1
+2
+
+--- ppt/slides/slide3.xml ---
+Introduction, Problem Definition & Objectives
+INTRODUCTION
+QuickBite
+is a smart food ordering web platform that lets users browse food, explore categories, manage a cart and place orders online through a simple, responsive interface backed by a database.
+PROBLEM
+Limited food discovery
+Difficulty comparing available items
+Less organized category browsing
+Manual order management
+No centralized digital ordering experience
+OBJECTIVES
+Build a user-friendly food ordering platform
+Organize food into clear categories with search & filters
+Implement cart and wishlist functionality
+Maintain user & order data using a database
+Provide a responsive, attractive interface
+USER ORDERING FLOW
+User
+Browse Food
+Select Food
+Cart / Wishlist
+Place Order
+Order Management
+QuickBite – Smart Food Ordering Platform  |  Review 1
+3
+
+--- ppt/slides/slide4.xml ---
+Requirement Analysis & Scope
+FUNCTIONAL REQUIREMENTS
+Registration & Login
+Category Browsing
+Search & Filtering
+Food Details
+Wishlist
+Shopping Cart
+Order Placement
+Order History
+Notifications
+Database Storage
+Admin food management
+NON-FUNCTIONAL REQUIREMENTS
+Responsive design
+Easy navigation
+Simple user interface
+Fast interaction
+Data consistency
+Maintainable code
+Light / Dark theme support
+SCOPE
+A complete foundation for a web-based food ordering platform where users can discover food, manage selections and place orders.
+USER SIDE
+Frontend
+Backend
+Database
+QuickBite – Smart Food Ordering Platform  |  Review 1
+4
+
+--- ppt/slides/slide5.xml ---
+Existing System Study
+Existing food-delivery platforms commonly provide the following features:
+Restaurant & food discovery
+Category-based browsing
+Search
+Cart and ordering
+Offers
+User accounts
+Order tracking
+FROM STUDY TO DESIGN
+Existing Food Ordering Platforms
+Study Features & User Flow
+Identify Requirements
+Design QuickBite
+From studying existing platforms, we identified common design patterns and functional requirements adapted into a smaller academic learning project.
+QuickBite – Smart Food Ordering Platform  |  Review 1
+5
+
+--- ppt/slides/slide6.xml ---
+Proposed Solution & System Design
+QuickBite provides a centralized web interface where users can:
+Register / Login
+Browse food categories
+Search and filter food
+Open food details
+Add items to wishlist
+Add items to cart
+Place orders
+View order information
+TECHNOLOGIES
+Frontend:
+HTML, CSS, JavaScript
+Backend:
+Node.js / Express.js
+Database:
+SQLite (project database)
+SYSTEM ARCHITECTURE
+QUICKBITE
+USER
+ADMIN
+DATABASE
+Frontend
+Search
+Category
+Cart
+Wishlist
+Management
+Users
+Food
+Cart
+Wishlist
+Orders
+Backend
+QuickBite – Smart Food Ordering Platform  |  Review 1
+6
+
+--- ppt/slides/slide7.xml ---
+Development Progress – Review 1
+Current Progress: 40%
+✓  COMPLETED / IMPLEMENTED
+Food category interface
+Offers & promotional sections
+User registration/login foundation
+Database structure
+Search interface
+Basic
+QuickBite
+home page
+Wishlist functionality
+Cart functionality
+Notifications
+Light / Dark theme support
+Basic order flow
+→  IN PROGRESS
+Complete category-wise food pages
+Add more food items and images
+Connect food items to detail pages
+Improve filtering & category navigation
+Complete order-history / DB sync
+Remaining UI refinement
+Review 1 focuses on requirement analysis, system design and initial implementation. Remaining modules will be completed in the next development phase.
+QuickBite – Smart Food Ordering Platform  |  Review 1
+7
+
+--- ppt/slides/slide8.xml ---
+Conclusion & Future Work
+CONCLUSION
+QuickBite provides the foundation for a web-based smart food ordering platform. In this first phase, the team completed initial requirement analysis, system planning, the database foundation and major interface components. The project is currently under active development, with category-wise food pages, detailed food views and further database integration being refined
+.
+FUTURE WORK
+Complete all category food pages
+Add complete food images and details
+Improve filtering and search
+Complete order history synchronization
+Strengthen database integration
+Complete admin management
+Improve checkout / payment simulation
+Perform final testing and UI refinement
+QuickBite
+– Smart Food Ordering Platform  |  Review 1
+
+--- ppt/slides/slide9.xml ---
+QuickBite – Smart Food Ordering Platform  |  B.Tech CSE, GIET University, Gunupur
+Thank you !
+Questions & Suggestions?

@@ -1,0 +1,163 @@
+=== UHIMS ===
+
+--- ppt/slides/slide1.xml ---
+Urban Heat Island
+Mitigation Simulation
+TEAM CHANDRA
+UHIMS
+AI-Driven Urban Heat Island Mitigation Simulator
+Presented By
+TIRTHAPADA PANDA
+ASHRITA BEHERA
+SWAGATAM PRADHAN
+RR HIMANSHU SEKHAR DAS
+GIET University,
+Gunupur
+, Odisha
+
+--- ppt/slides/slide2.xml ---
+THE PROBLEM: URBAN HEAT ISLANDS
+The Core Issue
+Dense urban areas trap heat due to concreate surface, roads, and a lake of green cover, creating dangerous temperature spikes.
+The Planning Gap
+Urban planners lack localized, data –driven tools to test how much a new park, cool roof, or water body will lower the temperature before physical construction.
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+
+--- ppt/slides/slide3.xml ---
+THE IDEA
+THE PROBLEM
+High temperatures from buildings, roads & low vegetation.
+Dense urban areas trap more heat.
+Need localized, data-driven heat analysis.
+Need to test mitigation strategies before implementation.
+OUR PROPOSED SOLUTION
+UHIMS
+AI-Driven Urban Heat Island Mitigation Simulator
+AI + Computer Vision + Geospatial Analysis + Simulation
+CORE PIPELINE
+Satellite
+Image
+Heat
+Prediction
+Mitigation
+Recommendation
+Simulation &
+Optimization
+THE INNOVATION
+Detects heat sources and urban patterns.
+Recommends targeted cooling measures.
+Simulates potential cooling before implementation.
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+2
+Urban feature extraction
+
+--- ppt/slides/slide4.xml ---
+SYSTEM ARCHITECTURE
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+
+--- ppt/slides/slide5.xml ---
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+Mitigation applied:
++20% Canopy Cover
+
+--- ppt/slides/slide6.xml ---
+TECHNICAL STACK
+FRONTEND
+HTML • CSS • JavaScript • Bootstrap
+BACKEND
+Python • Flask
+COMPUTER VISION
+OpenCV + Segmentation Model
+(candidates:
+SegFormer
+/ U-Net / DeepLabV3)
+MACHINE LEARNING
+Heat prediction (candidates: Random Forest /
+XGBoost
+/
+LightGBM
+)
+MAPPING / GIS
+Leaflet • GIS layers
+VISUALIZATION
+Chart.js dashboards
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+
+--- ppt/slides/slide7.xml ---
+ANALYSIS
+TECHNICAL FEASIBILITY
+Satellite & environmental data → urban analysis
+Computer vision → land-cover detection
+ML models → heat prediction
+Simulation → compare mitigation strategies
+Web dashboard → visualize results for planners
+CHALLENGES
+Localized temperature data
+Image quality & resolution
+Urban variation
+Model accuracy & validation
+Computational complexity
+MITIGATION STRATEGIES
+Combine geospatial & environmental data
+Start with city-block analysis
+Validate using temperature/LST data
+Use modular AI/ML architecture
+Scale from blocks to cities
+SCALABILITY
+City Block
+›
+Campus / Local Area
+›
+Neighbour
+-
+hood
+›
+Urban Zone
+›
+City
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+
+--- ppt/slides/slide8.xml ---
+FROM DETECTION TO ACTION
+AI Analysis
+›
+Hotspot
+Identification
+›
+Targeted
+Intervention
+›
+Simulation
+›
+Data-Driven
+Planning
+Targeted Green
+Infrastructure
+Planning
+Optimized Water-
+Based
+Cooling Interventions
+High-Albedo / Cool-
+Roof
+Area
+Identification
+Potential Reduction
+O
+f
+Heat Stress
+Potential Reduction in
+Cooling-Energy
+Demand
+Scalable, Data-Driven
+Urban Planning
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+5
+
+--- ppt/slides/slide9.xml ---
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+Designed to scale progressively, requiring minimal structural changes as we expand the analysis area.
+DEPLOYMENT & SCALABILITY
+
+--- ppt/slides/slide10.xml ---
+Urban Heat Island Mitigation Simulation  |  Team Chandra
+THANK YOU

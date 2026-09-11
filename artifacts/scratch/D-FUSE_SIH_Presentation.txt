@@ -1,0 +1,247 @@
+=== D-FUSE_SIH_Presentation ===
+
+--- ppt/slides/slide1.xml ---
+THE POST-DISASTER INFORMATION FOG
+D-FUSE
+Dynamic Disaster Evidence Fusion & Uncertainty Engine
+“From fragmented disaster reports to evidence-backed rescue decisions.”
+Team Name:
+TEAM CHANDRA
+Presented by
+:
+TIRTHAPADA PANDA
+ASHRITA BEHERA
+SWAGATAM PRADHAN
+RR HIMANSHU SEKHAR DAS
+D-FUSE
+1
+
+--- ppt/slides/slide2.xml ---
+THE PROBLEM: POST-DISASTER INFORMATION FOG
+|  THE POST-DISASTER INFORMATION FOG
+Citizen & Social
+Media Reports
+Field Team
+CSV / Excel
+Relief Camp
+PDF Reports
+Ground-Level
+Photos
+UNSTRUCTURED  •  CONTRADICTORY  •  UNVERIFIED  •  DUPLICATE  •  OUTDATED INFORMATION
+Who do we trust? Where is it worst? Where do we act first?
+Multiple
+sources reporting
+the same incident
+Zero
+central system to
+verify & rank urgency
+Minutes
+matter for rescue
+resource deployment
+D-FUSE
+2
+
+--- ppt/slides/slide3.xml ---
+PROPOSED SOLUTION: THE D-FUSE PIPELINE
+|  THE POST-DISASTER INFORMATION FOG
+Multi-Source
+Information
+AI
+Understanding
+Evidence
+Fusion
+Uncertainty +
+Severity Analysis
+Dynamic
+Priority Map
+Resource
+Recommendation
+KEY OUTPUT
+“Where should responders act first?”
+ACCEPTED INPUT TYPES
+Text
+Reports
+Excel /
+CSV
+PDF
+Reports
+Images
+GPS /
+Location
+Time-
+stamp
+Source
+Info
+D-FUSE
+3
+|  THE POST-DISASTER INFORMATION FOG
+
+--- ppt/slides/slide4.xml ---
+WHAT THE OUTPUT LOOKS LIKE
+VILLAGE A
+Zone-E2  •  Flood-affected
+CRITICAL
+Severity Score
+94 / 100
+Evidence Confidence
+91%
+People at Risk
+350
+Road Access
+Blocked
+Trend (last 6 hrs)
+Rapidly Worsening
+Independent Reports
+11 confirming
+PRIORITY LEGEND
+CRITICAL
+Act within minutes
+HIGH
+Act within hours
+MEDIUM
+Monitor & plan
+LOW
+Routine follow-up
+RESOURCE-AWARE RECOMMENDATION
+Deploy 2 rescue boats + 1 medical team to Village A now.
+Village C (High) and Village D (Verify First) follow in the queue.
+D-FUSE
+4
+|  THE POST-DISASTER INFORMATION FOG
+
+--- ppt/slides/slide5.xml ---
+TECHNICAL APPROACH: SYSTEM ARCHITECTURE
+|  THE POST-DISASTER INFORMATION FOG
+INPUT LAYER
+Text, Excel, PDF
+Images
+GPS + Timestamp
+AI
+PROCESSING
+LAYER
+NLP / LLM extraction
+Computer vision on images
+Semantic
+dedup
+(embeddings)
+Contradiction detection
+LOCATION + EVIDENCE LAYER
+Geospatial linking
+Temporal analysis
+Evidence graph
+D-FUSE ENGINE → DECISION LAYER
+Evidence + reliability scoring
+Priority score
+Resource recommendation
+OUTPUT
+Live Disaster Map
+Priority Ranking
+Confidence & Evidence
+Recommended Resources
+Verification Alerts
+D-FUSE
+5
+|  THE POST-DISASTER INFORMATION FOG
+
+--- ppt/slides/slide6.xml ---
+FEASIBILITY & VIABILITY
+|  THE POST-DISASTER INFORMATION FOG
+TECHNOLOGY STACK
+Frontend
+HTML/CSS/JS or React
+Backend
+Python + Flask/
+FastAPI
+AI
+LLM + Vision + Embeddings
+Database
+PostgreSQL /
+Supabase
+Maps
+Geospatial visualization
+Data
+CSV/ Excel/ PDF/ Image
+D-FUSE
+6
+|  THE POST-DISASTER INFORMATION FOG
+
+--- ppt/slides/slide7.xml ---
+DATA INGESTION
+Single report, bulk Excel/CSV, PDFs & images
+1,000 reports → processed as one evidence pool
+LOCATION SOURCING
+GPS, map-pin selection, text extraction, or CSV coordinates
+AI fuses evidence per location — it does not assume events
+HARDWARE REQUIREMENT
+No mandatory hardware — software-first prototype
+Future: IoT sensors, drones, satellite feeds, govt. systems
+CHALLENGES & MITIGATION
+Conflicting / duplicate reports → contradiction & embedding checks
+Outdated info → recency weighting |  Scale → batch ingestion
+D-FUSE
+|  THE POST-DISASTER INFORMATION FOG
+
+--- ppt/slides/slide8.xml ---
+PROTOTYPE DATASET & SCHEMA
+|  THE POST-DISASTER INFORMATION FOG
+DATASET SCHEMA (SAMPLE FIELDS)
+Field
+Example Value
+report_id
+R001
+location_zone
+Zone-E2 (Village A)
+disaster_type
+Flood
+report_text
+“Flood reached school”
+reported_need
+Rescue / Medical
+num_people_affected
+350
+source_type
+Field Worker Report
+source_reliability_score
+0.90
+duplicate_report_count
+11
+verification_status
+Verified
+urgency_level (target)
+Critical
+D-FUSE
+7
+
+--- ppt/slides/slide9.xml ---
+SAMPLE DISTRIBUTION (100 SYNTHETIC RECORDS)
+Dataset type:
+Synthetic + scenario-based (no real PII)
+Formats covered:
+CSV/Excel, text, images (planned), location + time metadata
+Includes:
+duplicate & contradictory reports, severity/priority labels
+7
+
+--- ppt/slides/slide10.xml ---
+IMPACT, INNOVATION & DIFFERENTIATION
+TEAM CHANDRA | THE POST-DISASTER INFORMATION FOG
+D-FUSE:
+Collect → Understand → Compare → Verify → Fuse → Predict → Prioritize → Recommend
+1. Dynamic Evidence Fusion
+Combines multiple independent sources instead of trusting one report
+2. Explainable Confidence
+Shows WHY a score is high: recency, confirmations, images, reliability
+3. Temporal Intelligence
+Detects Stable → Deteriorating → Critical trends over time
+4. Uncertainty-Aware Priority
+High risk + low confidence triggers “Verify this location first”
+5. Dynamic Priority Ranking
+Ranking updates automatically as new reports arrive
+6. Resource-Aware Support
+Recommends how limited resources should be distributed
+D-FUSE
+8
+
+--- ppt/slides/slide11.xml ---
+D-FUSE  |  Team: TEAM CHANDRA  |  GIET UNVERSITY
+Thank You

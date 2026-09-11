@@ -120,12 +120,21 @@ globalThis.__dirname = __bannerPath.dirname(globalThis.__filename);
     },
   });
 
-  // Create a fallback index.html and public directory for Vercel deployment detection
-  const { writeFile, mkdir } = await import("node:fs/promises");
-  await mkdir(path.resolve(distDir, "public"), { recursive: true });
-  const htmlContent = "<!DOCTYPE html><html><head><title>Portfolio API Server</title></head><body><h1>Portfolio API Server is running</h1><p>Endpoints available under <code>/api/healthz</code></p></body></html>";
-  await writeFile(path.resolve(distDir, "index.html"), htmlContent);
-  await writeFile(path.resolve(distDir, "public/index.html"), htmlContent);
+  // Sync frontend build if available, otherwise write fallback
+  const { writeFile, mkdir, cp } = await import("node:fs/promises");
+  const { existsSync } = await import("node:fs");
+  const frontendDist = path.resolve(artifactDir, "../tirthapada-portfolio/dist");
+  const publicDir = path.resolve(distDir, "public");
+  await mkdir(publicDir, { recursive: true });
+
+  if (existsSync(frontendDist) && existsSync(path.join(frontendDist, "index.html"))) {
+    await cp(frontendDist, publicDir, { recursive: true, force: true });
+    await cp(frontendDist, distDir, { recursive: true, force: true });
+  } else {
+    const htmlContent = "<!DOCTYPE html><html><head><title>Portfolio API Server</title></head><body><h1>Portfolio API Server is running</h1><p>Endpoints available under <code>/api/healthz</code></p></body></html>";
+    await writeFile(path.resolve(distDir, "index.html"), htmlContent);
+    await writeFile(path.resolve(publicDir, "index.html"), htmlContent);
+  }
 }
 
 buildAll().catch((err) => {

@@ -1,3 +1,4 @@
+import express from "express";
 import app from "./app";
 import { logger } from "./lib/logger";
 
@@ -17,3 +18,5 @@ app.listen(port, (err) => {
 
   logger.info({ port }, "Server listening");
 });
+
+export default app;

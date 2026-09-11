@@ -4,6 +4,9 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm --filter @workspace/tirthapada-portfolio run build && node -e \"const fs=require('fs'); fs.cpSync('artifacts/tirthapada-portfolio/dist', 'dist', {recursive:true, force:true}); fs.cpSync('artifacts/tirthapada-portfolio/dist', 'public', {recursive:true, force:true});\"",
+    "build:api": "pnpm --filter @workspace/api-server run build",
+    "start": "pnpm --filter @workspace/api-server run start",
+    "start:api": "pnpm --filter @workspace/api-server run start",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
